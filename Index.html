@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excelearntips Mentor - Edukasi & Otomasi Excel Premium</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            excel: '#107c41',
+            excelHover: '#0b592e',
+            dark: '#0f172a',
+            premiumBg: '#f8fafc'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-premiumBg text-slate-800 antialiased selection:bg-emerald-100 selection:text-excel">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center border border-emerald-100 shadow-sm">
+          <svg class="w-6 h-6 text-excel" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="font-extrabold text-xl tracking-tight text-excel">Excelearntips<span class="text-slate-800">.</span></span>
+          <span class="text-[10px] bg-slate-100 text-slate-650 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider block -mt-1">Mentor</span>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-excel transition">Tentang Kami</a>
+        <a href="#scope" class="hover:text-excel transition">Scope Belajar</a>
+        <a href="#library" class="hover:text-excel transition">Coding Library</a>
+        <a href="#blog" class="hover:text-excel transition">Artikel & Blog</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#library" class="bg-excel hover:bg-excelHover text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-md shadow-emerald-700/10 transition-all hidden sm:block">
+          Mulai Belajar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 bg-gradient-to-b from-white via-slate-50 to-premiumBg">
+    <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 bg-emerald-50 text-excel text-xs font-semibold px-4 py-2 rounded-full mb-8 border border-emerald-100 shadow-sm">
+        <span class="w-2.5 h-2.5 rounded-full bg-excel animate-pulse"></span>
+        An Official Subsidiary of Tutoria Indonesia
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl font-black text-slate-950 tracking-tight leading-tight max-w-4xl mx-auto">
+        Kerja Lebih Cepat, Istirahat Lebih Cepat.<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-excel to-emerald-600">Otomatiskan Pekerjaanmu.</span>
+      </h1>
+      
+      <p class="mt-6 text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+        Gak perlu pusing bikin formula rumit dari nol atau coding berhari-hari. Dapatkan library code siap pakai, template otomatis, dan tutorial santai yang bisa langsung kamu terapkan besok pagi!
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="#library" class="bg-excel hover:bg-excelHover text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-emerald-700/20 transition-all hover:-translate-y-0.5 flex items-center gap-2">
+          Eksplor Coding Library
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+        <a href="#blog" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold px-8 py-4 rounded-xl transition-all hover:-translate-y-0.5">
+          Tulis & Baca Insight
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & SUBSIDIARY INFO -->
+  <section id="about" class="bg-white border-y border-slate-100 py-16 relative">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="flex justify-center mb-4">
+        <span class="text-xs font-bold tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1 rounded-full border border-slate-100">Sinergi Edukasi & Otomasi</span>
+      </div>
+      <p class="mt-4 text-xl md:text-2xl font-semibold text-slate-800 leading-relaxed italic">
+        "Excelearntips Mentor adalah bagian dari ekosistem besar <span class="text-excel font-bold not-italic">Tutoria Indonesia</span>. Kami fokus membantu para profesional, mahasiswa, dan pembuat keputusan untuk mendominasi tools produktivitas kerja melalui cara-cara yang asyik, praktis, dan otomatis."
+      </p>
+      <div class="mt-8 flex justify-center items-center gap-3 text-sm text-slate-500 bg-slate-50 w-fit mx-auto px-4 py-2 rounded-xl border border-slate-150">
+        <span>Didukung penuh oleh induk perusahaan</span> 
+        <span class="h-4 w-[1px] bg-slate-300"></span>
+        <span class="font-extrabold text-slate-800 tracking-wider">TUTORIA INDONESIA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE TUTORIAL: PROBLEM SOLVER GRID -->
+  <section id="scope" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-excel font-bold text-xs uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-md">What We Learn & Build</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mt-3">Satu Tempat untuk Selesaikan Masalah Produktivitasmu</h2>
+      <p class="text-slate-500 mt-3 text-sm md:text-base">Gak cuma belajar teori, kita langsung hajar solusi nyata dari masalah kerjaanmu sehari-hari.</p>
+    </div>
+
+    <!-- Grid Scope (Problem Solver Format) -->
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Scope Card 1: Data Saya Berantakan (Office Essentials) -->
+      <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-excel font-bold text-xl mb-6 border border-emerald-100">
+            <svg class="w-6 h-6 text-excel" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+            </svg>
+          </div>
+          <span class="text-xs text-amber-600 font-bold bg-amber-50 px-2 py-1 rounded">Masalah: "Data Saya Berantakan"</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">Office Essentials</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">Merapikan, menyortir, dan menganalisis database jumbo dengan cepat, rapi, dan minim error.</p>
+          
+          <div class="border-t border-slate-50 pt-4">
+            <span class="text-xs font-bold text-slate-400 block mb-2 uppercase">Supported Tools:</span>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Excel (Basic-Adv)</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Google Sheets</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Libre Office</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Open Office</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scope Card 2: Saya Lelah Kerja Manual (The Automators) -->
+      <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 font-bold text-xl mb-6 border border-blue-100">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <span class="text-xs text-blue-600 font-bold bg-blue-50 px-2 py-1 rounded">Masalah: "Saya Lelah Kerja Manual"</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">The Automators</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">Ubah kerjaan manual 5 jam jadi selesai 5 detik sekali klik lewat pemrograman ramah pemula.</p>
+          
+          <div class="border-t border-slate-50 pt-4">
+            <span class="text-xs font-bold text-slate-400 block mb-2 uppercase">Supported Tools:</span>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Google Apps Script</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">AppSheet</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">AI-Powered Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scope Card 3: Besok Saya Presentasi (The Storytellers) -->
+      <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 font-bold text-xl mb-6 border border-purple-100">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <span class="text-xs text-purple-600 font-bold bg-purple-50 px-2 py-1 rounded">Masalah: "Besok Saya Harus Presentasi"</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-4 mb-2">The Storytellers</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">Ubah barisan angka berantakan jadi visual interaktif cantik yang bikin bos atau klien langsung setuju.</p>
+          
+          <div class="border-t border-slate-50 pt-4">
+            <span class="text-xs font-bold text-slate-400 block mb-2 uppercase">Supported Tools:</span>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Power BI</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Looker Studio</span>
+              <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Power Point</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CODING LIBRARY -->
+  <section id="library" class="bg-white border-t border-slate-100 py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-excel font-bold text-xs uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-md">Ready to Copy-Paste</span>
+          <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-3">Coding & Template Library</h2>
+          <p class="text-slate-500 mt-2">Dapatkan jalan pintas instan tanpa perlu repot buat dari awal. Langsung checkout via embed Lynk.id.</p>
+        </div>
+      </div>
+
+      <!-- Grid Library -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-premiumBg p-6 rounded-2xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="bg-blue-50 text-blue-600 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Apps Script / Sheets</span>
+              <span class="text-xs text-slate-400">⚡ Best Seller</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mt-4">Auto-Sender PDF Email</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">Kirim laporan otomatis dalam bentuk PDF ke ratusan email klien secara personal, langsung dari Google Sheet-mu sekali pencet.</p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-slate-200/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 block line-through">Rp 99.000</span>
+              <span class="font-extrabold text-slate-900 text-lg">Rp 49.000</span>
+            </div>
+            <button onclick="openLynkMockup('Auto-Sender PDF Email', 'Rp 49.000', 'https://lynk.id/username/auto-sender-pdf')" class="bg-excel hover:bg-excelHover text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-md shadow-emerald-700/5">
+              Checkout Lynk
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-premiumBg p-6 rounded-2xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="bg-emerald-50 text-excel text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">AI Coding / Script</span>
+              <span class="text-xs text-slate-400">🔥 Recomended</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mt-4">Centralized Task Merger</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">Gabungkan puluhan file spreadsheet berantakan yang dikirimkan tim kerja ke dalam satu master sheet rapi dengan bantuan AI-powered macro script.</p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-slate-200/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 block line-through">Rp 149.000</span>
+              <span class="font-extrabold text-slate-900 text-lg">Rp 75.000</span>
+            </div>
+            <button onclick="openLynkMockup('Centralized Task Merger', 'Rp 75.000', 'https://lynk.id/username/task-merger')" class="bg-excel hover:bg-excelHover text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-md shadow-emerald-700/5">
+              Checkout Lynk
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-premiumBg p-6 rounded-2xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="bg-purple-50 text-purple-600 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Looker Studio / BI</span>
+              <span class="text-xs text-emerald-600 font-semibold">💎 Free</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mt-4">Dynamic Dashboard Template</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">Template dashboard Looker Studio yang interaktif, super bersih, elegan, dan siap digunakan untuk presentasi data performa penjualan.</p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-slate-200/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 block">Akses Selamanya</span>
+              <span class="font-extrabold text-excel text-lg">FREE / Gratis</span>
+            </div>
+            <button onclick="openLynkMockup('Dynamic Dashboard Template', 'Gratis', 'https://lynk.id/username/dashboard-free')" class="bg-excel hover:bg-excelHover text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-md shadow-emerald-700/5">
+              Ambil Akses
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE BLOG / INPUT TULISAN SECTION -->
+  <section id="blog" class="bg-slate-100/60 border-t border-slate-200/30 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Input Blog Baru -->
+        <div class="lg:col-span-5 bg-white p-8 rounded-3xl border border-slate-150 shadow-sm">
+          <span class="text-excel font-extrabold text-xs uppercase tracking-widest block mb-1">Interactive Sandbox</span>
+          <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Tulis Blog / Insight Baru</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-6 leading-relaxed">
+            Ingin mencoba menambahkan postingan blog atau tips baru langsung di landing page ini? Gunakan formulir instan di bawah dan lihat hasilnya langsung di sebelah kanan!
+          </p>
+
+          <form id="blogForm" onsubmit="addBlogPost(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Judul Artikel</label>
+              <input type="text" id="postTitle" required placeholder="Contoh: 3 Trik Excel yang Bikin Kerja Cepat" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-excel focus:bg-white transition-all text-slate-800 font-medium">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Kategori</label>
+                <select id="postCategory" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-excel focus:bg-white transition-all text-slate-700 font-medium">
+                  <option value="Excel Tips">Excel Tips</option>
+                  <option value="Otomatisasi">Otomatisasi</option>
+                  <option value="Data Visual">Data Visual</option>
+                  <option value="No-Code Tech">No-Code Tech</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Penulis</label>
+                <input type="text" id="postAuthor" required value="Excelearntips Mentor" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-excel focus:bg-white transition-all text-slate-700 font-medium">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Isi Ringkasan Tulisan</label>
+              <textarea id="postContent" required rows="4" placeholder="Bagikan tips atau ringkasan tutorialmu di sini dengan santai..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-excel focus:bg-white transition-all text-slate-800 leading-relaxed"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-excel hover:bg-excelHover text-white font-bold py-3.5 rounded-xl transition shadow-md shadow-emerald-700/10 text-sm">
+              Publikasikan Artikel
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Blog Feed -->
+        <div class="lg:col-span-7">
+          <div class="mb-8">
+            <span class="text-excel font-bold text-xs uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-md">Live Articles</span>
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-3">Eksplorasi Ide & Insight</h2>
+            <p class="text-slate-500 mt-2 text-sm">Wawasan ringkas, tutorial cepat, dan ide menarik seputar pengolahan data.</p>
+          </div>
+
+          <!-- List Of Blog Posts -->
+          <div id="blogContainer" class="space-y-6">
+            <!-- Blog Posts will be populated dynamically by JS -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-10 items-start mb-12">
+        <div class="md:col-span-6">
+          <span class="font-extrabold text-2xl tracking-tight text-white">Excelearntips<span class="text-excel">.</span></span>
+          <p class="text-xs text-slate-400 mt-1 max-w-sm leading-relaxed">
+            Meningkatkan kapasitas profesionalmu melalui penguasaan spreadsheet modern, otomatisasi AI, dan visualisasi data yang menakjubkan.
+          </p>
+        </div>
+        <div class="md:col-span-6 md:text-right">
+          <span class="text-xs font-bold text-slate-500 uppercase block mb-2">Ecosystem Partner:</span>
+          <span class="text-white font-bold tracking-widest text-sm bg-slate-800 px-4 py-2.5 rounded-xl border border-slate-700 inline-block">
+            TUTORIA INDONESIA
+          </span>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-slate-500">© 2026 Excelearntips Mentor. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-slate-500">
+          <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-white transition">Ketentuan Layanan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL CHECKOUT LYNK (MOCKUP) -->
+  <div id="lynkModal" class="fixed inset-0 bg-slate-950/40 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300">
+    <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-6 shadow-2xl border border-slate-100 transform scale-95 transition-all duration-300" id="modalContainer">
+      <div class="flex justify-between items-start mb-6">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">MOCKUP REDIRECTION</span>
+        </div>
+        <button onclick="closeLynkMockup()" class="text-slate-400 hover:text-slate-600 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="text-center pb-6 border-b border-slate-100">
+        <div class="w-14 h-14 bg-emerald-50 text-excel rounded-2xl flex items-center justify-center mx-auto mb-4 border border-emerald-100 text-2xl shadow-sm">
+          🔗
+        </div>
+        <h4 class="text-lg font-bold text-slate-900" id="modalProdName">Nama Produk</h4>
+        <p class="text-sm text-slate-500 mt-1">Siap untuk ditambahkan ke dashboard Lynk Anda.</p>
+      </div>
+
+      <div class="py-6 space-y-4">
+        <div class="flex justify-between text-sm">
+          <span class="text-slate-500 font-medium">Harga Produk:</span>
+          <span class="font-extrabold text-slate-900" id="modalProdPrice">Rp 0</span>
+        </div>
+        <div class="flex justify-between text-sm">
+          <span class="text-slate-500 font-medium">Platform Tujuan:</span>
+          <span class="font-semibold text-excel">lynk.id/excelearntips</span>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <a id="modalRedirectLink" href="#" target="_blank" class="w-full bg-excel hover:bg-excelHover text-white text-center font-bold py-3 px-4 rounded-xl block transition shadow-md shadow-emerald-700/10 text-sm">
+          Buka Tautan Lynk Resmi
+        </a>
+        <button onclick="closeLynkMockup()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 px-4 rounded-xl block transition text-sm">
+          Kembali ke Landing Page
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT STATE MANAGEMENT (IN-MEMORY FOR PREVIEW) -->
+  <script>
+    // Initial Mock Blog Posts Data
+    let blogPosts = [
+      {
+        id: 1,
+        title: "Kenapa Kamu Harus Mulai Belajar Google Apps Script Tahun Ini",
+        category: "Otomatisasi",
+        author: "Excelearntips Mentor",
+        date: "17 Juli 2026",
+        content: "Ngapain kerja lembur buat input data manual kalau kamu bisa bikin script pendek yang menyelesaikan tugas 3 jam hanya dalam 5 detik? Kami akan membedah dasar-dasar otomatisasi tanpa perlu pusing memikirkan dasar pemrograman yang berat."
+      },
+      {
+        id: 2,
+        title: "3 Formula Sakti Excel yang Sering Dilewati Para Analis Data",
+        category: "Excel Tips",
+        author: "Excelearntips Mentor",
+        date: "12 Juli 2026",
+        content: "Bukan cuma VLOOKUP atau INDEX-MATCH biasa. Ada 3 kombinasi formula dinamis modern berbasis ARRAY yang bisa mempersingkat waktu analisismu, menyajikan laporan yang clean, serta membuat atasan kagum saat membacanya."
+      }
+    ];
+
+    // Function to render blog posts dynamically
+    function renderBlogPosts() {
+      const container = document.getElementById('blogContainer');
+      container.innerHTML = '';
+
+      if (blogPosts.length === 0) {
+        container.innerHTML = `
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 text-center">
+            <span class="text-3xl block mb-2">📝</span>
+            <p class="text-slate-500 text-sm">Belum ada tulisan nih. Yuk, tambahkan tulisan pertamamu di sebelah kiri!</p>
+          </div>
+        `;
+        return;
+      }
+
+      blogPosts.forEach(post => {
+        let categoryColorClass = "text-excel bg-emerald-50";
+        if (post.category === "Otomatisasi") categoryColorClass = "text-blue-600 bg-blue-50";
+        if (post.category === "Data Visual") categoryColorClass = "text-purple-600 bg-purple-50";
+        if (post.category === "No-Code Tech") categoryColorClass = "text-amber-600 bg-amber-50";
+
+        const postHTML = `
+          <article class="bg-white p-8 rounded-2xl border border-slate-100 hover:shadow-md transition-all duration-300">
+            <div class="flex items-center gap-4 text-xs text-slate-400 mb-4">
+              <span>${post.date}</span>
+              <span>•</span>
+              <span class="font-bold uppercase tracking-wider px-2 py-0.5 rounded ${categoryColorClass}">${post.category}</span>
+              <span>•</span>
+              <span class="font-medium text-slate-500">Oleh: ${post.author}</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 hover:text-excel transition">
+              <a href="#blog">${post.title}</a>
+            </h3>
+            <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+              ${post.content}
+            </p>
+            <div class="mt-6 flex items-center justify-between">
+              <a href="#blog" class="text-excel font-bold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                Baca selengkapnya <span>&rarr;</span>
+              </a>
+              <button onclick="deletePost(${post.id})" class="text-xs text-red-500 hover:text-red-700 transition font-medium flex items-center gap-1">
+                Hapus
+              </button>
+            </div>
+          </article>
+        `;
+        container.innerHTML += postHTML;
+      });
+    }
+
+    // Function to add blog post
+    function addBlogPost(event) {
+      event.preventDefault();
+      
+      const title = document.getElementById('postTitle').value;
+      const category = document.getElementById('postCategory').value;
+      const author = document.getElementById('postAuthor').value;
+      const content = document.getElementById('postContent').value;
+      
+      const today = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = today.toLocaleDateString('id-ID', options);
+
+      const newPost = {
+        id: Date.now(),
+        title: title,
+        category: category,
+        author: author,
+        date: formattedDate,
+        content: content
+      };
+
+      blogPosts.unshift(newPost); // Add to beginning of array
+      renderBlogPosts();
+
+      // Clear Form and Show Succes Animation
+      document.getElementById('blogForm').reset();
+      document.getElementById('postAuthor').value = "Excelearntips Mentor"; // Reset default
+    }
+
+    // Function to delete post
+    function deletePost(id) {
+      blogPosts = blogPosts.filter(post => post.id !== id);
+      renderBlogPosts();
+    }
+
+    // Modal Mockup for Lynk Checkout
+    function openLynkMockup(prodName, prodPrice, lynkUrl) {
+      const modal = document.getElementById('lynkModal');
+      const container = document.getElementById('modalContainer');
+      
+      document.getElementById('modalProdName').innerText = prodName;
+      document.getElementById('modalProdPrice').innerText = prodPrice;
+      document.getElementById('modalRedirectLink').href = lynkUrl;
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      container.classList.remove('scale-95');
+      container.classList.add('scale-100');
+    }
+
+    function closeLynkMockup() {
+      const modal = document.getElementById('lynkModal');
+      const container = document.getElementById('modalContainer');
+
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      container.classList.remove('scale-100');
+      container.classList.add('scale-95');
+    }
+
+    // Run on Load
+    window.onload = function() {
+      renderBlogPosts();
+    }
+  </script>
+</body>
+</html>
